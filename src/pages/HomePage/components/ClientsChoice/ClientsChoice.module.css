@@ -1,0 +1,77 @@
+.group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sort {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.price {
+    display: flex;
+    gap: 6px;
+    align-items: end;
+}
+
+.description {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    max-width: fit-content;
+}
+
+.h1 {
+    font-family: "Instrument Serif";
+    font-size: 36px;
+    font-weight: 400;
+    color: #205529;
+    margin: 0 0 28px;
+}
+
+.h2 {
+    font-family: "Instrument Serif";
+    color: #205529;
+    font-size: 24px;
+    font-weight: 400;
+    color: #205529;
+    margin: 14px 0 0;
+}
+
+.before {
+    text-decoration: line-through;
+    color: rgba(32, 85, 41, 0.65);
+    font-family: "Instrument Serif";
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.after {
+    color: #205529;
+    font-family: "Instrument Serif";
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.category {
+    font-family: "Pontano Sans";
+    font-size: 14px;
+    font-weight: 500;
+    color: #205529;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.products {
+    padding: 48px 28px 56px;
+    border-bottom: 1px solid rgba(32, 85, 41, 0.1);
+}

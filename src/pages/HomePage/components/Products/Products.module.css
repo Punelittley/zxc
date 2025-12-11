@@ -1,0 +1,245 @@
+
+.group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sort {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.price {
+    display: flex;
+    gap: 6px;
+    align-items: end;
+}
+
+.description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(32, 85, 41, 0.1);
+    border-radius: 12px;
+    padding: 12px;
+    width: 261px;
+    height: 326px;
+    box-sizing: border-box;
+}
+
+.h1 {
+    font-family: "Instrument Serif";
+    font-size: 36px;
+    font-weight: 400;
+    color: #205529;
+    margin: 48px 0 28px;
+}
+
+.h2 {
+    font-family: "Instrument Serif";
+    color: #205529;
+    font-size: 24px;
+    font-weight: 400;
+    color: #205529;
+    margin: 0;
+    line-height: 1.2;
+    max-width: 160px;
+}
+
+.before {
+    text-decoration: line-through;
+    color: rgba(32, 85, 41, 0.65);
+    font-family: "Instrument Serif";
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.after {
+    color: #205529;
+    font-family: "Instrument Serif";
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.category {
+    font-family: "Pontano Sans";
+    font-size: 14px;
+    font-weight: 500;
+    color: #205529;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.products {
+    padding: 0 28px 56px;
+    border-bottom: 1px solid rgba(32, 85, 41, 0.1);
+}
+
+.api-section {
+    margin-bottom: 40px;
+}
+
+.api-section-title {
+    font-family: "Instrument Serif";
+    font-size: 28px;
+    font-weight: 400;
+    color: #205529;
+    margin: 0 0 20px 0;
+    text-align: center;
+}
+
+.api-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
+.api-card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(32, 85, 41, 0.1);
+    border-radius: 12px;
+    padding: 12px;
+    width: 261px;
+    height: 326px;
+    box-sizing: border-box;
+}
+
+.api-card img {
+    width: 237px; 
+    height: 237px; 
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+}
+
+.api-description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+    height: 52px; 
+}
+
+.api-title {
+    font-family: "Instrument Serif";
+    color: #205529;
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0;
+    line-height: 1.2;
+    max-width: 160px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.api-price {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    align-items: flex-end;
+}
+
+.api-price-before {
+    text-decoration: line-through;
+    color: rgba(32, 85, 41, 0.65);
+    font-family: "Instrument Serif";
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.api-price-after {
+    color: #205529;
+    font-family: "Instrument Serif";
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.api-card img:not([src]), 
+.api-card img[src=""], 
+.api-card img[src*="placeholder"] {
+    background: linear-gradient(135deg, #f1f8e9 0%, #dcedc8 100%);
+    position: relative;
+}
+
+.api-card img:not([src])::after, 
+.api-card img[src=""]::after,
+.api-card img[src*="placeholder"]::after {
+    font-size: 48px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.7;
+}
+
+.api-loading, .api-error, .api-empty {
+    text-align: center;
+    padding: 60px 20px;
+    background: #f9f9f9;
+    border-radius: 12px;
+    margin: 20px 0;
+    border: 1px solid rgba(32, 85, 41, 0.1);
+    width: 100%;
+}
+
+.api-loading {
+    color: #205529;
+    font-family: "Pontano Sans";
+    font-size: 16px;
+}
+
+.api-error {
+    color: #d32f2f;
+    background: #ffebee;
+    font-family: "Pontano Sans";
+}
+
+.api-empty {
+    color: rgba(32, 85, 41, 0.7);
+    font-family: "Pontano Sans";
+}
+
+.api-loading::after {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    border: 2px solid rgba(32, 85, 41, 0.1);
+    border-top: 2px solid #205529;
+    border-radius: 50%;
+    animation: api-spin 1s linear infinite;
+    vertical-align: middle;
+}
+
+
+
+.api-error p:first-child {
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.api-error p:last-child {
+    font-size: 14px;
+    color: rgba(32, 85, 41, 0.7);
+}
+
